@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@color/purple_500"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="FROM: "
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:translationX="15dp"
+                android:translationY="15dp"/>
+            <EditText
+                android:id="@+id/txtFrom"
+                android:layout_width="286dp"
+                android:layout_height="35dp"
+                android:hint="Enter Name or Number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="10dp"
+                android:translationY="15dp"
+                android:translationX="15dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="TO: +63"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:translationX="15dp"
+                android:translationY="15dp"/>
+            <EditText
+                android:id="@+id/txtTo"
+                android:layout_width="286dp"
+                android:layout_height="35dp"
+                android:hint="Enter 10 digit number"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="10dp"
+                android:translationY="15dp"
+                android:translationX="15dp"/>
+
+        </LinearLayout>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/purple_500">
+
+        <EditText
+            android:id="@+id/txtMessage"
+            android:layout_width="280dp"
+            android:layout_height="200dp"
+            android:fitsSystemWindows="true"
+            android:hint="Enter Message"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="10dp"
+            android:translationX="20dp"
+            android:translationY="20dp" />
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:fitsSystemWindows="true"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/cardview_shadow_start_color"
+            android:text="SEND"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:translationX="25dp"
+            android:translationY="100dp" />
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
